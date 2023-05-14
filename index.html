@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restuant - menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+
+        <div class="main-logo"><img src="./assets/img/logo.png" alt=""></div>
+      <h1>به گری کافه خوش آمدید</h1>
+      <form action="" onsubmit="return false">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input id="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="دنبال چی هستید ؟" />
+      </div>
+    </form>
+    </header>
+    <div class="search-bar" id="filter">
+        <button data-filter="breakfast" class="btn active">
+          <img src="./assets/img/english-breakfast.png" data-filter="breakfast" alt="" />صبحانه
+        </button>
+     
+        <button data-filter="salad" class="btn">
+            <img src="./assets/img/salad.png" data-filter="salad" alt="" />سالاد
+        </button>
+        <button data-filter="main" class="btn">
+            <img src="./assets/img/Pizza.png" data-filter="main" alt="" />غذای اصلی
+        </button>
+        
+        <button data-filter="coffe" class="btn ">
+          <img src="./assets/img/Coffee.png" data-filter="coffe" alt=""/>قهوه
+        </button>
+        
+        
+        <button data-filter="cake" class="btn ">
+          <img src="./assets/img/Doughnut.png"  data-filter="cake" alt="" />بیکری
+        </button>
+     
+        <button data-filter="juice" class="btn ">
+          <img src="./assets/img/Drink.png" data-filter="juice" alt="" />نوشیدنی  
+        </button>
+<!--      
+        <button data-filter="breakfast" class="btn">
+          <img src="./assets/img/Coca Cola.png" alt="" />نوشابه
+        </button> -->
+     
+    </div>
+    </div>
+    <div class="foodMenu" id="foods">
+      <div class="foodBack salad" data-name="p-1">
+        <div class="food ">
+          <img
+            src="./assets/foods/salad1.jpg"
+            alt=""
+          />
+          <h3>سالاد گاردن</h3>
+          <p>
+            کاهو فرانسوی، کاهو پیچ، خیار، لوبیا، هویج، کلم قرمز، ذرت شیرین،
+            زیتون سیاه، سس رنچ
+          </p>
+          <span>۱۰۷,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack salad" data-name="p-1">
+        <div class="food">
+          <img
+            src="assets/foods/saladchese.jpg"
+            alt=""
+          />
+          <h3>سالاد لیقوان کرنبری</h3>
+          <p>
+            بیبی اسفناج، روکولا، پنیر لیقوان، گردو، سیب سبز، کرنبری، سس خردل عسل
+          </p>
+          <span> ۱۴۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/salad.jpg"
+            alt=""
+          />
+          <h3>سالاد کینوا آووکادو</h3>
+          <p>آووکادو، کینوا، نخود سفید، گوجه چری، پیاز قرمز به همراه سس ارده</p>
+          <span> ۱۵۷,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/saladsalmon.jpg"
+            alt=""
+          />
+          <h3>سالاد برگ‌های سبز</h3>
+          <p>
+            کاهو فرانسوی، بیبی اسفناج، کاهو پیچ، سورل، تخمه، کدو، تخمه، هندوانه،
+            بادام، درختی، خیار، توت فرنگی، به، همراه روغن، زیتون، آبلیمو
+          </p>
+          <span>۱۳۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/pizzamargarita.jpg"
+            alt=""
+          />
+          <h3>پیتزا مارگاریتا</h3>
+          <p>
+            ۲۲۰ گرم، نخود سفید مزه دار شده، به همراه ارده، سیر، روغن زیتون
+            فرابکر، نان پیتا سرخ شده
+          </p>
+          <span> ۹۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/pizzasteak.jpg"
+            alt=""
+          />
+          <h3>
+            پیتزا استیک
+          </h3>
+          <p>
+            ۲۲۰ گرم دیپ لوبیا چیتی مزه دار شده تند، روغن زیتون فرابکر، نان پیتا
+            سرخ شده
+          </p>
+          <span> ۹۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/turk.jpg"
+            alt=""
+          />
+          <h3>قهوه ترک</h3>
+          <p>۲۸۰ میلی لیتر، اسپرسو دبل اسپشیالیتی ۱۰۰% عربیکا کلمبیا، شیر</p>
+          <span> ۷۳,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/caramel.jpg"
+            alt=""
+          />
+          <h3>موکا فندقی</h3>
+          <p>
+            ۳۶۰ میلی لیتر، اسپرسو دبل اسپشیالیتی ۱۰۰% عربیکا کلمبیا، شکلات فندقی
+            دستساز، شیر
+          </p>
+          <span> ۸۳,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/maciato.jpg"
+            alt=""
+          />
+          <h3>بلک کافی</h3>
+          <p>
+            ۳۶۰ میلی لیتر، قهوه ۱۰۰% عربیکا، دم آوری شده با دستگاه (کافیین بالا)
+          </p>
+          <span> ۶۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/americano.jpg"
+            alt=""
+          />
+          <h3>امریکانو</h3>
+          <p>
+            ۲۲۰ میلی لیتر، اسپرسو دبل اسپشیالیتی ۱۰۰% عربیکا کلمبیا، آب جوش
+          </p>
+          <span> ۶۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/icedcoffe1.jpg"
+            alt=""
+          />
+          <h3>آیس لته </h3>
+          <p>
+            ۲۸۰ میلی لیتر، اسپرسو دبل اسپشیالیتی ۱۰۰% عربیکا کلمبیا، شیر، یخ
+          </p>
+          <span> ۷۳,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/icedamericano.jpg"
+            alt=""
+          />
+          <h3>آیس امریکانو </h3>
+          <p>
+            ۲۸۰ میلی لیتر، اسپرسو دبل اسپشیالیتی ۱۰۰% عربیکا کلمبیا، آب، یخ
+          </p>
+          <span>  ۶۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack">
+        <div class="food coffe">
+          <img
+            src="assets/foods/hotchocklete.jpg"
+            alt=""
+          />
+          <h3>هات چاکلت </h3>
+          <p>
+            ۳۴۰ میلی لیتر، پودر شکلات، شیر
+          </p>
+          <span>  ۷۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/hotchoclete.jpg"
+            alt=""
+          />
+          <h3>ماچا لته </h3>
+          <p>
+            ۳۴۰ میلی لیتر، پودر ماچا، شیر
+          </p>
+          <span> ۷۷,۰۰۰ تومان    </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/latte.jpg"
+            alt=""
+          />
+          <h3>لته</h3>
+          <p>
+            ۳۴۰ میلی لیتر، پودر شکلات شیری، شیر
+          </p>
+          <span>  ۷۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/oatmeal.jpg"
+            alt=""
+          />
+          <h3>
+            اوتمیل با میوه
+          </h3>
+          <p>
+            ۲۸۰ میلی لیتر بهار نارنج سرد شده، به لیمو، سیب سبز
+          </p>
+          <span>  ۵۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/cheseburger.jpg"
+            alt=""
+          />
+          <h3>چیز برگر مخصوص
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، پنیر ورقه ای چدار، گوجه فرنگی، خیارشور، کاهو، پیازجعفری، سس مخصوص، نان برگر
+        </p>
+          <span>۱۷۱,۰۰۰ تومان    
+                </span>
+        </div>
+      </div>
+  
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/burgermac.jpg"
+            alt=""
+          />
+          <h3>ماشروم برگر مخصوص
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack main ">
+        <div class="food">
+          <img
+            src="assets/foods/sandwich.jpg"
+            alt=""
+          />
+          <h3> ساندویچ سالامی</h3>
+          <p>
+            ۲۲۰ گرم، نخود سفید مزه دار شده، به همراه ارده، سیر، روغن زیتون
+            فرابکر، نان پیتا سرخ شده
+          </p>
+          <span> ۱۲۰,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food">
+          <img
+            src="assets/foods/brsandwich.jpg"
+            alt=""
+          />
+          <h3> ساندویچ تست</h3>
+          <p>
+            ۲۲۰ گرم، نخود سفید مزه دار شده، به همراه ارده، سیر، روغن زیتون
+            فرابکر، نان پیتا سرخ شده
+          </p>
+          <span> ۱۲۰,۰۰۰ تومان  </span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food">
+          <img
+            src="assets/foods/sandwichbecon.jpg"
+            alt=""
+          />
+          <h3>
+            سانویچ بیکن
+          </h3>
+          <p>
+            ۲۲۰ گرم، نخود سفید مزه دار شده، به همراه ارده، سیر، روغن زیتون
+            فرابکر، نان پیتا سرخ شده
+          </p>
+          <span>  ۱۲۰,۰۰۰ تومان </span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/sandwichcu.jpg"
+            alt=""
+          />
+          <h3>ماشروم برگر مخصوص
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack cake">
+        <div class="food ">
+          <img
+            src="assets/foods/chockolatcake.jpg"
+            alt=""
+          />
+          <h3>کیک شکلاتی
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/chikenburger.jpg"
+            alt=""
+          />
+          <h3>
+            ماشروم برگر مخصوص
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/fogato.jpg"
+            alt=""
+          />
+          <h3>افگاتو
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/lemonade.jpg"
+            alt=""
+          />
+          <h3>لیموناد
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack cake">
+        <div class="food ">
+          <img
+            src="assets/foods/whitecake.jpg"
+            alt=""
+          />
+          <h3>کیک 
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/spresso.jpg"
+            alt=""
+          />
+          <h3>اسپرسو
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/nimro.jpg"
+            alt=""
+          />
+          <h3>تست نیمرو
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/zanjebil.jpg"
+            alt=""
+          />
+          <h3>زنجبیل
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/totfarangi.jpg"
+            alt=""
+          />
+          <h3>اسموتی توتفرنگی
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/pancake.jpg"
+            alt=""
+          />
+          <h3>پنکیک
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+        
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/potatosalad1.jpg"
+            alt=""
+          />
+          <h3>سالاد سیبزمینی
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۱۷۵,۵۰۰ تومان
+        </span>
+        </div>
+        
+      </div>      <div class="foodBack mian">
+        <div class="food ">
+          <img
+            src="assets/foods/pastameatbal.jpg"
+            alt=""
+          />
+          <h3>پاستا گوشت
+
+          </h3>
+          <p>
+            یک عدد برگر مخصوص گوشت گوساله ۱۵۰ گرم، قارچ، پنیر موزارلا، گوجه، خیارشور، کاهو، سس مخصوص، پیاز، جعفری، نان برگر
+
+
+          </p>
+          <span> ۲۲۵,۵۰۰ تومان
+        </span>
+        </div>
+        
+      </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+<footer>
+    <div class="mainFooter">
+        <div> <i class="fa fa-phone"></i><span> شماره تماس:</span></div>
+        <span> ۰۹۱۲۶۱۱۱۲۲ </span>
+   
+</div>
+    <div class="mainFooter">
+        <div> <i class="fa fa-map"></i><span> آدرس:</span></div>
+        <span> سعادت آباد</span>
+   
+</div>
+    <div class="mainFooter">
+        <div> <i class="fa fa-at"></i><span> ایمیل:</span></div>
+        <span> me@resturant.com</span>
+   
+</div>
+    <!-- <div class="mainFooter">
+        <div> <i class="fa fa-phone"></i><span> شماره تماس:</span></div>
+        <span> ۰۹۱۲۶۱۱۱۲۲</span>
+   
+</div> -->
+
+    <a href="greyfin.ir">Greyfin.ir&#169;</a>
+</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
